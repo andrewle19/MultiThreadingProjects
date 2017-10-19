@@ -12,24 +12,25 @@ import time
 # First subarray is arr[l..m]
 # Second subarray is arr[m+1..r]
 def merge(arr, l, m, r):
-    n1 = m - l + 1
-    n2 = r - m
+    n1 = int(m - l + 1)
+    n2 = int(r - m)
+
 
     # create temp arrays
-    L = [0] * (n1)
-    R = [0] * (n2)
+    L = [0] * int(n1)
+    R = [0] * int(n2)
 
     # Copy data to temp arrays L[] and R[]
     for i in range(0 , n1):
-        L[i] = arr[l + i]
+        L[i] = arr[int(l + i)]
 
     for j in range(0 , n2):
-        R[j] = arr[m + 1 + j]
+        R[j] = arr[int(m + 1 + j)]
 
     # Merge the temp arrays back into arr[l..r]
     i = 0     # Initial index of first subarray
     j = 0     # Initial index of second subarray
-    k = l     # Initial index of merged subarray
+    k = int(l)     # Initial index of merged subarray
 
     while i < n1 and j < n2 :
         if L[i] <= R[j]:
@@ -61,7 +62,7 @@ def mergeSort(arr,l,r):
 
         # Same as (l+r)/2, but avoids overflow for
         # large l and h
-        m = (l+(r-1))/2
+        m = int((l+(r-1))/2)
 
         # Sort first and second halves
         mergeSort(arr, l, m)
@@ -75,8 +76,7 @@ arr = [7,12,19,3,18,4,2,6,15,8];
 mid = int(9/2)
 n = len(arr)
 print ("Given array is")
-for i in range(n):
-    print ("%d" %arr[i]),
+print (arr),
 
 # create 2 threads for each side of array
 thread1 = Thread(target=mergeSort,args=(arr,0,mid))
@@ -93,5 +93,4 @@ thread2.join()
 merge(arr, 0, mid, n-1)
 
 print ("\n\nSorted array is")
-for i in range(n):
-    print ("%d" %arr[i]),
+print (arr),
