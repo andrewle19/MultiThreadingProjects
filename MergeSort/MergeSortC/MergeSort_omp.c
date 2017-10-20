@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <omp.h>
 
-void merge_arr(int * X, int n, int * tmp) // merge both arrays 
+void merge_arr(int * X, int n, int * tmp) // merge both arrays  
 {
 	int i = 0;
 	int j = n / 2;
@@ -43,7 +43,7 @@ void merge_sort(int * X, int n, int * tmp)// recursive merge sort with threads
 #pragma omp task firstprivate (X, n, tmp)
 	merge_sort(X + (n / 2), n - (n / 2), tmp);
 
-#pragma omp taskwait
+#pragma omp taskwait // waits till threads finish 
 
 	// merge both halves back together
 	merge_arr(X, n, tmp);
