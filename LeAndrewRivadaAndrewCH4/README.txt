@@ -1,4 +1,4 @@
-Andrew Le and Andrew Rivada
+Andrew Le
 
 Practice 4_21
 Made in C can run in Xcode
