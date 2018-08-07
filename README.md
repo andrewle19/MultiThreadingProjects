@@ -1,11 +1,11 @@
 <h1>MultiThreading Projects<h1>
 
 <h2>Author:Andrew Le</h2>
-<h2>Email:andrewle19@gmail.com</h2>
+<h2>Email: andrewle19@gmail.com</h2>
 <p> Projects are written in multiple languages which are listed below. Each sub project will use a different threading library.</p>
 <ol>
   <li>
-    <p>MergeSort: uses MultiThreading to sort halves of arrays to perform the MergeSort Algorithm O(nlog(n))</p>
+    <p>**MergeSort:** uses MultiThreading to sort halves of arrays to perform the MergeSort Algorithm O(nlog(n))</p>
     <ul>
       <li>Made in C with Pthreads Library</li>
       <li>Made in C with OMP Library</li>
