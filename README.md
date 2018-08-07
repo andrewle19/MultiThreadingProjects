@@ -5,7 +5,7 @@
 <p> Projects are written in multiple languages which are listed below. Each sub project will use a different threading library.</p>
 <ol>
   <li>
-    <p>**MergeSort:** uses MultiThreading to sort halves of arrays to perform the MergeSort Algorithm O(nlog(n))</p>
+    <p><b>MergeSort:</b>uses MultiThreading to sort halves of arrays to perform the MergeSort Algorithm O(nlog(n))</p>
     <ul>
       <li>Made in C with Pthreads Library</li>
       <li>Made in C with OMP Library</li>
