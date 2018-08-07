@@ -19,7 +19,7 @@
     </ul>
   </li>
   <li>
-    <p><b>MonteCarloPi:</b> uses MultiThreading to estimate pi using the MonteCarlo algorithm which is a heuristic random algorithm</b></p>
+    <p><b>MonteCarloPi:</b> uses MultiThreading to estimate pi using the MonteCarlo algorithm which is a heuristic random algorithm</p>
     <ul>
       <li>Made in C with Pthreads Library</li>
       <li>Made in C++ with OMP Library</li>
